@@ -5,6 +5,8 @@ authors = ["j3elam <j3elam@gmail.com>"]
 edition = "2018"
 
 [dependencies]
+bootloader = "0.4.0" # deps in here are ^ by default
+
 
 # Disable stack unwinding on panic, instant abort, spec moved to x86_64-rust_os.json
 # [profile.dev] 
