@@ -12,10 +12,12 @@ fn panic(_info: &PanicInfo) -> ! {
     loop{}
 }
 
+static HELLO: &[u8] = b"Hello World!";
+
 #[no_mangle]
 pub extern "C" fn _start() -> ! {
     // entry point, linker looks for _start()
-        let vga_buffer = 0xb8000 as *mut u8;
+        let vga_buffer = 0xb8000 as *mut u8;    // set vga_buffer to mutable pointer w/o compile safety & cast address to u8
     
     for (i, &byte) in HELLO.iter().enumerate() {
         unsafe {
