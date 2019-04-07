@@ -7,6 +7,8 @@ edition = "2018"
 [dependencies]
 bootloader = "0.4.0" # deps in here are ^ by default
 
+[package.metadata.bootimage]
+default-target = "x86_64-rust_os.json"
 
 # Disable stack unwinding on panic, instant abort, spec moved to x86_64-rust_os.json
 # [profile.dev] 
