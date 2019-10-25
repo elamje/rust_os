@@ -1,7 +1,7 @@
 [package]
 name = "rust_os"
 version = "0.1.0"
-authors = ["j3elam <j3elam@gmail.com>"]
+authors = elamje
 edition = "2018"
 
 [dependencies]
